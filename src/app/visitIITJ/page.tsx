@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-//suii
 
 export default function VisitIITJ() {
     return (
