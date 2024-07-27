@@ -22,10 +22,6 @@ export const navLinks: NavLinks = {
     text: "Visit IITJ",
     url: "/visitIITJ",
   },
-  giving_back: {
-    text: "Giving back",
-    url: "/givingBack",
-  },
   quick_access: {
     text: "Quick Access",
     subLinks: [

@@ -1,0 +1,11 @@
+/* test_nav.module.css */
+.nav-container {
+    padding-left: 0rem; /* Adjust this value as needed */
+    padding-right: 0rem; /* Adjust this value as needed */
+  }
+  
+  .nav-links {
+    margin-left: 0.5rem; /* Adjust this value as needed */
+    margin-right: 0.5rem; /* Adjust this value as needed */
+  }
+  

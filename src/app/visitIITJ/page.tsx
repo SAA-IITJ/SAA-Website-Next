@@ -111,7 +111,7 @@ export default function VisitIITJ() {
                                 </div>
                                 <div className="text-center text-black dark:text-black">
                                     <Image
-                                        className="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
+                                        className="mx-auto mb-4 w-36 h-36 rounded-full object-cover object-top"
                                         src="/assets/team/yuvraj_team.jpg"
                                         alt="Tharakadatta Hegde"
                                         width={144}

@@ -1,4 +1,3 @@
-// components/NavBar.tsx
 "use client";
 import { useState } from "react";
 import {
@@ -15,14 +14,15 @@ export interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ navLinks }) => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isDropdownLink = (navLink: NavLink): navLink is DropdownLink => {
     return (navLink as DropdownLink).subLinks !== undefined;
   };
 
   return (
-    <nav className="flex justify-between items-center w-[92%] mx-auto py-4 bg-white dark:bg-gray-800">
-      <div className="flex items-center">
+    <nav className="flex flex-col md:flex-row justify-between items-center w-[92%] mx-auto py-4 bg-white dark:bg-gray-800">
+      <div className="flex items-center w-full md:w-auto">
         <img
           className="w-16 cursor-pointer"
           src="/assets/saa_logo_jpeg.jpeg"
@@ -31,9 +31,33 @@ const NavBar: React.FC<NavBarProps> = ({ navLinks }) => {
         <span className="ml-3 text-2xl font-semibold whitespace-nowrap dark:text-white">
           Society of Alumni Affairs
         </span>
+        <button
+          className="md:hidden ml-auto p-2 text-black dark:text-white"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <svg
+            className="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </div>
-      <div className="relative">
-        <ul className="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
+      <div
+        className={`md:flex md:items-center md:gap-[2vw] gap-8 mt-4 md:mt-0 ${
+          isMenuOpen ? 'block' : 'hidden'
+        }`}
+      >
+        <ul className="flex md:flex-row flex-col md:items-center gap-4">
           {Object.entries(navLinks).map(([key, navLink], index) => (
             <li key={key} className="relative">
               {isDropdownLink(navLink) ? (

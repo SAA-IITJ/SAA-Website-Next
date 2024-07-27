@@ -36,7 +36,6 @@
 
 .nav-link::before {
   @apply transition-all duration-300 absolute bg-red-500;
-  content: "";
   height: 3px;
 }
 

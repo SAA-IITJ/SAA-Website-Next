@@ -1,7 +1,13 @@
 /* src/styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  font-family: "Public Sans", sans-serif;
+}
 
 @keyframes circle {
   0% {
@@ -12,7 +18,152 @@
   }
 }
 
+html, body {
+  @apply min-h-screen;
+  margin: 0;
+  padding: 0;
+}
+
 .box {
   animation: circle 1.5s;
   clip-path: circle(75%);
 }
+
+.zoom {
+  transition: transform 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.04);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.event-link {
+  padding: 1px 0px;
+  margin: 0px 1px;
+  display: inline-block;
+  position: relative;
+}
+
+.event-link::before {
+  transition: width 300ms;
+  height: 5px;
+  content: '';
+  position: absolute;
+  background-color: black;
+  left: 10%;
+  right: 30%;
+  width: 0;
+  bottom: 20px;
+}
+
+.event-link-ltr::before {
+  width: 0%;
+  bottom: 5px;
+}
+
+.event-link-ltr:hover::before {
+  width: 60%;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
+
+@keyframes marquee1 {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
+
+@keyframes marquee3 {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.marquee-animation {
+  animation: marquee 35s linear infinite;
+}
+
+.marquee-animation2 {
+  animation: marquee2 35s linear infinite;
+}
+
+.marquee-animation1 {
+  animation: marquee1 35s linear infinite;
+}
+
+.marquee-animation3 {
+  animation: marquee3 35s linear infinite;
+}
+
+.event-link {
+  padding: 1px 0px;
+  margin: 0px 1px;
+  display: inline-block;
+  position: relative;
+}
+
+.event-link::before {
+  transition: width 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: black;
+  left: 10%; 
+  right: 30%; 
+  width: 0; 
+  bottom: 20px;
+}
+
+.event-link-ltr::before {
+  width: 0%;
+  bottom: 5px;
+}
+
+.event-link-ltr:hover::before {
+  width: 60%;
+}
+
