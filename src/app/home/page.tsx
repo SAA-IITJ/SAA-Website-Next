@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -12,40 +12,33 @@ import About from "../components/AboutHome";
 import LogoSpace from "../components/logospace";
 import dynamic from "next/dynamic";
 import AOS from "aos";
-import "aos/dist/aos.css"
-
+import "aos/dist/aos.css";
 
 function AboutSection() {
   useEffect(() => {
-    AOS.init({})
-  }, [])
+    AOS.init({});
+  }, []);
   return (
     <>
-      
       <LogoSpace />
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <About />
       </div>
-      <div data-aos="fade-up">
-      <AlumniMemoir />
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <AlumniMemoir />
       </div>
-      <div data-aos="fade-up">
-      <AlumniChannel />
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <AlumniChannel />
       </div>
-      <div data-aos="fade-up">
-      <DashakHome />
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <DashakHome />
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <VisitIITJHome />
       </div>
-      <div data-aos="fade-up"
-     data-aos-anchor-placement="top-center">
-      <ContactUs />
-     </div>
-      
-      
-      
-      
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <ContactUs />
+      </div>
       
     </>
   );

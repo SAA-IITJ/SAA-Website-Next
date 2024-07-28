@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const AlumniDaySection = () => {
   return (
-    <div className="delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
+    <div className="delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0 pt-16" data-taos-offset="300">
       <div className="duration-[1000ms] [animation-iteration-count:infinite] taos:opacity-0">
         <div style={{ paddingLeft: '40px', paddingRight: '40px' }}>
           <section

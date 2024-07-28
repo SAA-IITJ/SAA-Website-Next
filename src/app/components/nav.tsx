@@ -1,12 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   NavLinks,
   DropdownLink,
   SimpleLink,
   NavLink,
 } from "@/app/types/Navlinks.type";
-import "../styles/nav.module.css"; // Ensure your custom styles are imported
+import styles from "../styles/nav.module.css"; // Ensure your custom styles are imported
 
 export interface NavBarProps {
   navLinks: NavLinks;
@@ -15,108 +15,205 @@ export interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ navLinks }) => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const isDropdownLink = (navLink: NavLink): navLink is DropdownLink => {
     return (navLink as DropdownLink).subLinks !== undefined;
   };
 
+  useEffect(() => {
+    return () => {
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+      }
+    };
+  }, [hoverTimeout]);
+
+  const handleMouseEnter = (index: number) => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+    }
+    setOpenDropdown(index);
+  };
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 500);
+    setHoverTimeout(timeout);
+  };
+
   return (
-    <nav className="flex flex-col md:flex-row justify-between items-center w-[92%] mx-auto py-4 bg-white dark:bg-gray-800">
-      <div className="flex items-center w-full md:w-auto">
-        <img
-          className="w-16 cursor-pointer"
-          src="/assets/saa_logo_jpeg.jpeg"
-          alt="Logo"
-        />
-        <span className="ml-3 text-2xl font-semibold whitespace-nowrap dark:text-white">
-          Society of Alumni Affairs
-        </span>
-        <button
-          className="md:hidden ml-auto p-2 text-black dark:text-white"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <svg
-            className="w-6 h-6"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
+    <nav className="bg-white nav-container pt-6 pb-6">
+      <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
+              <a href="/home" className="text-black">
+                <div className="flex items-center">
+                  <img
+                    className="w-16"
+                    src="/assets/saa_logo_jpeg.jpeg"
+                    alt="Logo"
+                  />
+                  <span className={`ml-3 text-3xl font-semibold whitespace-nowrap dark:text-white ${styles.title}`}>
+                    Society of Alumni Affairs
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <div className="ml-2 flex items-center space-x-6 nav-links">
+              {Object.entries(navLinks).map(([key, navLink], index) => (
+                <div
+                  key={key}
+                  className="relative"
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {isDropdownLink(navLink) ? (
+                    <>
+                      <button
+                        className="text-black hover:bg-white font-base hover:text-black rounded-lg p-2 flex items-center"
+                      >
+                        {navLink.text}
+                        <svg
+                          className="ml-1 h-4 w-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </button>
+                      {openDropdown === index && (
+                        <div className="absolute left-0 mt-2 w-48 bg-white font-base rounded-md shadow-lg py-2 z-10">
+                          {navLink.subLinks.map((subLink) => (
+                            <a
+                              key={subLink.url}
+                              href={subLink.url}
+                              className="block px-4 py-2 text-black font-base hover:bg-gray-200"
+                            >
+                              {subLink.text}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <a
+                      href={navLink.url}
+                      className={`text-black font-base rounded-lg p-2 ${styles['anim-link']} ${styles['anim-link-ltr']}`}
+                    >
+                      {navLink.text}
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="md:hidden flex items-center">
+            <button
+              className="inline-flex items-center justify-center p-2 rounded-md font-base text-black hover:text-black focus:outline-none"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="black"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="black"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
       </div>
-      <div
-        className={`md:flex md:items-center md:gap-[2vw] gap-8 mt-4 md:mt-0 ${
-          isMenuOpen ? 'block' : 'hidden'
-        }`}
-      >
-        <ul className="flex md:flex-row flex-col md:items-center gap-4">
-          {Object.entries(navLinks).map(([key, navLink], index) => (
-            <li key={key} className="relative">
-              {isDropdownLink(navLink) ? (
-                <>
-                  <button
-                    onClick={() =>
-                      setOpenDropdown(openDropdown === index ? null : index)
-                    }
-                    className="text-black bg-white dark:text-white dark:bg-gray-800 hover:text-gray-500 dark:hover:text-gray-300 focus:outline-none rounded-lg text-center inline-flex items-center"
-                    type="button"
+      {isMenuOpen && (
+        <div className={`md:hidden`}>
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {Object.entries(navLinks).map(([key, navLink], index) => (
+              <div key={key}>
+                {isDropdownLink(navLink) ? (
+                  <>
+                    <button
+                      className="text-black flex hover:bg-white font-base hover:text-black rounded-lg p-2 w-full text-left items-center"
+                      onClick={() => setOpenDropdown(openDropdown === index ? null : index)}
+                    >
+                      {navLink.text}
+                      <svg
+                        className="ml-1 h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    {openDropdown === index && (
+                      <div className="pl-4">
+                        {navLink.subLinks.map((subLink) => (
+                          <a
+                            key={subLink.url}
+                            href={subLink.url}
+                            className="text-black block hover:bg-white font-base hover:text-black rounded-lg p-2"
+                          >
+                            {subLink.text}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <a
+                    href={navLink.url}
+                    className="text-black block hover:bg-white font-base hover:text-black rounded-lg p-2"
                   >
                     {navLink.text}
-                    <svg
-                      className="w-2.5 h-2.5 ms-3"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 10 6"
-                    >
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="m1 1 4 4 4-4"
-                      />
-                    </svg>
-                  </button>
-                  {openDropdown === index && (
-                    <div className="absolute z-50 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg divide-y divide-gray-100 dark:divide-gray-600">
-                      <ul className="py-2 text-sm text-black dark:text-white">
-                        {navLink.subLinks.map(({ text, url }) => (
-                          <li key={url}>
-                            <a
-                              href={url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
-                            >
-                              {text}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </>
-              ) : (
-                <a
-                  href={navLink.url}
-                  className="text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded"
-                >
-                  {navLink.text}
-                </a>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

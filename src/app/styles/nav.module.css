@@ -1,4 +1,21 @@
+/* nav.module.css */
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+/* Apply the Poppins font to the entire navbar */
+.nav-container {
+  font-family: 'Poppins', sans-serif;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.nav-open {
+  max-height: 500px; /* Adjust as needed to accommodate your content */
+}
+
+.nav-closed {
+  max-height: 0;
+}
 
 .title {
   font: font-poppins text-black block;
@@ -35,8 +52,15 @@
 }
 
 .nav-link::before {
-  @apply transition-all duration-300 absolute bg-red-500;
+  transition: width 300ms;
   height: 3px;
+  content: "";
+  position: absolute;
+  background-color: red;
+  left: 10%; 
+  right: 100%; 
+  width: 0; 
+  bottom: 1px;
 }
 
 .nav-link-ltr::before {
@@ -46,4 +70,32 @@
 
 .nav-link-ltr:hover::before {
   width: 100%;
+}
+
+.anim-link {
+  padding: 6px 0px;
+  margin: 0px 1px;
+  display: inline-block;
+  position: relative;
+}
+
+.anim-link::before {
+  transition: width 300ms;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: red;
+  left: 10%; 
+  right: 100%; 
+  width: 0; 
+  bottom: 2px;
+}
+
+.anim-link-ltr::before {
+  width: 0%;
+  bottom: 2px;
+}
+
+.anim-link-ltr:hover::before {
+  width: 80%;
 }
