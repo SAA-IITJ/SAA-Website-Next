@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "../styles/AlumniChanel.css";
+import "../styles/AlumniChanel-ltr.css";
 const AlumniChannelSection = () => {
   return (
     <div className="px-10">
@@ -71,40 +72,44 @@ const AlumniChannelSection = () => {
           alt=""
         />
       </div>
-      <div className="wrapper">
-        <div className="item item1">
-        <div className="image-holder ">
-          <a href="https://www.instagram.com/techhacksbyn.nirmal/">
-          <img className = "image"  src= "assets/home/marquee_nirmal.jpeg"/>
-          </a>
-        </div>
+      <div className="wrapper-rtl">
+        <div className="item-rtl item-rtl1">
+          <div className="image-holder ">
+            <a href="https://www.instagram.com/techhacksbyn.nirmal/">
+              <img className="image" src="assets/home/marquee_nirmal.jpeg" />
+            </a>
+          </div>
           <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
               <a href="#">Nirmal Kumawat</a>
             </h3>
-            <span className="text-gray-950 text-xs" >Computer Scientist-II Adobe</span>
+            <span className="text-gray-950 text-xs">
+              Computer Scientist-II Adobe
+            </span>
           </div>
         </div>
 
-        <div className="item item2">
-        <div className="image-holder ">
-          <a href="https://www.instagram.com/lalchandbisu/">
-          <img className = "image"  src= "assets/home/marquee_lalchand.jpeg"/>
-          </a>
-        </div>
+        <div className="item-rtl item-rtl2">
+          <div className="image-holder ">
+            <a href="https://www.instagram.com/lalchandbisu/">
+              <img className="image" src="assets/home/marquee_lalchand.jpeg" />
+            </a>
+          </div>
           <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
               <a href="#">Lal Chand Bisu</a>
             </h3>
-            <span className="text-gray-950 text-xs">Co-Founder & CEO at Kuku FM</span>
+            <span className="text-gray-950 text-xs">
+              Co-Founder & CEO at Kuku FM
+            </span>
           </div>
         </div>
 
-        <div className="item item3">
-        <div className="image-holder ">
-          <a href="https://www.instagram.com/_vinod92/">
-          <img className = "image"  src= "assets/home/marquee_vinod.jpeg"/>
-          </a>
+        <div className="item-rtl item-rtl3">
+          <div className="image-holder ">
+            <a href="https://www.instagram.com/_vinod92/">
+              <img className="image" src="assets/home/marquee_vinod.jpeg" />
+            </a>
           </div>
           <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
@@ -114,73 +119,208 @@ const AlumniChannelSection = () => {
           </div>
         </div>
 
-        <div className="item item4">
-        <div className="image-holder ">
-          <a href="https://www.instagram.com/_vikasgoyal/">
-          <img className = "image"  src= "assets/home/marquee_vikas.jpeg"/>
-          </a>
-        </div>
+        <div className="item-rtl item-rtl4">
+          <div className="image-holder ">
+            <a href="https://www.instagram.com/_vikasgoyal/">
+              <img className="image" src="assets/home/marquee_vikas.jpeg" />
+            </a>
+          </div>
           <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
               <a href="#">Vikas Goyal</a>
             </h3>
-            <span className="text-gray-950 text-xs">Co-founder, CTO-Kuku FM</span>
+            <span className="text-gray-950 text-xs">
+              Co-founder, CTO-Kuku FM
+            </span>
           </div>
         </div>
 
-        <div className="item item5">
-        <div className="image-holder ">
-        <a href="https://www.linkedin.com/in/tapishr?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjFBrZYcFR3%2BJ8fZ8isjksA%3D%3D">
-        <img className = "image"  src= "assets/home/marquee_tapish.jpeg"/>
-        </a>
-        </div>
-        <div className="Text">
+        <div className="item-rtl item-rtl5">
+          <div className="image-holder ">
+            <a href="https://www.linkedin.com/in/tapishr?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjFBrZYcFR3%2BJ8fZ8isjksA%3D%3D">
+              <img className="image" src="assets/home/marquee_tapish.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
               <a href="#">Tapish Rathore</a>
             </h3>
-            <span className="text-gray-950 text-xs">Co-founder & CTO @ Vibinex</span>
+            <span className="text-gray-950 text-xs">
+              Co-founder & CTO @ Vibinex
+            </span>
           </div>
         </div>
 
-        <div className="item item6">
-        <div className="image-holder ">
-          <a href="https://www.linkedin.com/in/hustler-utkarsh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdzCE2Yl3QpWbWfKxhSft8w%3D%3D">
-          <img className = "image"  src= "assets/home/marquee_utkarsh.jpeg"/>
-          </a>
-        </div>
-        <div className="Text">
+        <div className="item-rtl item-rtl6">
+          <div className="image-holder ">
+            <a href="https://www.linkedin.com/in/hustler-utkarsh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdzCE2Yl3QpWbWfKxhSft8w%3D%3D">
+              <img className="image" src="assets/home/marquee_utkarsh.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
               <a href="#">Utkarsh Trivedi</a>
             </h3>
-            <span className="text-gray-950 text-xs">Co-Founder @Verifast AI</span>
+            <span className="text-gray-950 text-xs">
+              Co-Founder @Verifast AI
+            </span>
           </div>
         </div>
 
-        <div className="item item7">
-        <div className="image-holder ">
-          <a href="https://www.instagram.com/sethi.tanmay/">
-          <img className = "image"  src= "assets/home/marquee_tanmay.jpeg"/>
-          </a>
-        </div>
-        <div className="Text">
+        <div className="item-rtl item-rtl7">
+          <div className="image-holder ">
+            <a href="https://www.instagram.com/sethi.tanmay/">
+              <img className="image" src="assets/home/marquee_tanmay.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
               <a href="#">Tanmay sethi</a>
             </h3>
-            <span className="text-gray-950 text-xs" >Co-Founder @Verifast</span>
+            <span className="text-gray-950 text-xs">Co-Founder @Verifast</span>
           </div>
         </div>
 
-        <div className="item item9">
+        <div className="item-rtl item-rtl9">
           <div className="image-holder ">
-          <a href="https://www.linkedin.com/in/himanshujaiswal1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV8T7zjq7Se6NWWj12grYpA%3D%3D">
-            <img className = "image"  src= "assets/home/marquee_himanshu.jpeg"/>
-          </a>
+            <a href="https://www.linkedin.com/in/himanshujaiswal1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV8T7zjq7Se6NWWj12grYpA%3D%3D">
+              <img className="image" src="assets/home/marquee_himanshu.jpeg" />
+            </a>
           </div>
           <div className="Text">
             <h3 className="text-xl font-bold tracking-tight text-black">
               <a href="#">Himanshu Jaiswal</a>
             </h3>
-            <span className="text-gray-950 text-xs">Senior Product Manager @ Visa Inc</span>
+            <span className="text-gray-950 text-xs">
+              Senior Product Manager @ Visa Inc
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="wrapper-ltr">
+        <div className="item-ltr item-ltr1">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/gsmanu007">
+              <img className="image" src="assets/home/marquee_gurjot.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">gurjot Singh </a>
+            </h3>
+            <span className="text-gray-950 text-xs">
+              VP, Quant at Deutsche Bank
+            </span>
+          </div>
+        </div>
+
+        <div className="item-ltr item-ltr2">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/sinisterlight">
+              <img className="image" src="assets/home/marquee_shobhit.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">Shobhit Srivastava</a>
+            </h3>
+            <span className="text-gray-950 text-xs">
+              Co-Founder at Shovel Company
+            </span>
+          </div>
+        </div>
+
+        <div className="item-ltr item-ltr3">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/darshan-joshi-5947033b">
+              <img className="image" src="assets/home/marquee_darshan.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">Darshan Joshi</a>
+            </h3>
+            <span className="text-gray-950 text-xs">
+              Partner at McKinsey & Company
+            </span>
+          </div>
+        </div>
+
+        <div className="item-ltr item-ltr4">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/surajn-ai">
+              <img className="image" src="assets/home/marquee_suraj.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">Suraj Nadipelly</a>
+            </h3>
+            <span className="text-gray-950 text-xs">
+              Partner at AlphaAdvisors
+            </span>
+          </div>
+        </div>
+
+        <div className="item-ltr item-ltr5">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/siddarthjn">
+              <img className="image" src="assets/home/marquee_siddharth.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">Siddharth Jain</a>
+            </h3>
+            <span className="text-gray-950 text-xs">
+              Summer associate @ McKinsey
+            </span>
+          </div>
+        </div>
+
+        <div className="item-ltr item-ltr6">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/manu-agarwal-21b2964b">
+              <img className="image" src="assets/home/marquee_manu.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">Manu Agrawal</a>
+            </h3>
+            <span className="text-gray-950 text-xs">
+              Software Engineer @Google
+            </span>
+          </div>
+        </div>
+
+        <div className="item-ltr item-ltr7">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/shivamverma1006">
+              <img className="image" src="assets/home/marquee_shivam.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">Shivam Verma</a>
+            </h3>
+            <span className="text-gray-950 text-xs">Co-founder & CTO @ Chat360</span>
+          </div>
+        </div>
+
+        <div className="item-ltr item-ltr9">
+          <div className="image-holder ">
+            <a href="linkedin.com/in/aditya-ranjan-77305571">
+              <img className="image" src="assets/home/marquee_aditya.jpeg" />
+            </a>
+          </div>
+          <div className="Text">
+            <h3 className="text-xl font-bold tracking-tight text-black">
+              <a href="#">Aditya Ranjan</a>
+            </h3>
+            <span className="text-gray-950 text-xs">
+            Lead - Customer ExperienceLead - Customer Experience @ IDfy
+            </span>
           </div>
         </div>
       </div>
