@@ -1,0 +1,120 @@
+[
+    {
+    "id": "1",    
+    "startDate": "2024-06-01",
+    "endDate": "2024-06-02",
+    "name": "Alumni Connect Session - Jalem Raj Rohit",
+    "startTime": "09:00:00",
+    "endTime": "17:00:00",
+    "venue": "Conference Hall A",
+    "description": "Alumni conduct session for students",
+    "eventTypeId": "Ask an Alumnus",
+    "img":"./dashak.JPG",
+      "link": "/events"},
+    
+    
+    {
+    "id": "2",    
+    "startDate": "2024-06-01",
+    "endDate": "2024-06-02",
+    "name": "Echoes of Wisdom - Rajendra Nagar",
+    "startTime": "09:00:00",
+    "endTime": "17:00:00",
+    "venue": "Conference Hall A",
+    "description": "Insights from the Alumni",
+    "eventTypeId": "Alumni Interviews",
+    "img":"./dashak.JPG",
+    "link": "/events"
+},
+
+    {
+    "id": "3",    
+    "startDate": "2024-06-01",
+    "endDate": "2024-06-02",
+    "name": "Ask an Alumnus - Krati Saxena",
+    "startTime": "09:00:00",
+    "endTime": "17:00:00",
+    "venue": "Conference Hall A",
+    "description": "Webinar from our Alumni",
+    "eventTypeId": "Ask an Alumnus",
+    "img":"./dashak.JPG",
+    "link": "/events"
+    },
+
+    {
+     
+    "id": "4",    
+    "startDate": "2024-06-01",
+      "endDate": "2024-06-02",
+      "name": "Ask an Alumnus - Gurjot Singh",
+      "startTime": "09:00:00",
+      "endTime": "17:00:00",
+      "venue": "Conference Hall A",
+      "description": "Webinar from our Alumni",
+      "eventTypeId": "Ask an Alumnus",
+      "img":"./dashak.JPG",
+      "link": "/events"
+    },
+
+    {
+     
+    "id": "5",    
+    "startDate": "2024-06-01",
+      "endDate": "2024-06-02",
+      "name": "Dashak 3.0",
+      "startTime": "09:00:00",
+      "endTime": "17:00:00",
+      "venue": "Jodhpur Club",
+      "description": "The prestigious 10-yearly alumni meetup for IIT Jodhpur!",
+      "eventTypeId": "Flagship Events",
+      "img":"./dashak.JPG",
+      "link": "/Dashak"
+    },
+
+    {
+     
+    "id": "6",    
+    "startDate": "2024-06-01",
+      "endDate": "2024-06-02",
+      "name": "Prometeo x SAA",
+      "startTime": "09:00:00",
+      "endTime": "17:00:00",
+      "venue": "Conference Hall A",
+      "description": "Annual tech fest and SAA's collaborative event",
+      "eventTypeId": "Flagship Events",
+      "img":"./dashak.JPG",
+      "link": "/PrometeoSAA"
+    },
+
+    {
+     
+    "id": "7",    
+    "startDate": "2024-07-15",
+      "endDate": "2024-07-15",
+      "name": "Soon to be Alumnus",
+      "startTime": "10:00:00",
+      "endTime": "15:00:00",
+      "venue": "Workshop Room B",
+      "description": "An event for the graduating batch",
+      "eventTypeId": "Ask an Alumnus",
+      "img":"./dashak.JPG",
+      "link": "/events"
+    },
+
+    
+
+    {
+     
+    "id": "9",    
+    "startDate": "2024-08-20",
+      "endDate": "2024-08-20",
+      "name": "Scribble Day",
+      "startTime": "18:00:00",
+      "endTime": "21:00:00",
+      "venue": "Community Center",
+      "description": "A special event for the graduating batch!",
+      "eventTypeId": "Flagship Events",
+      "img":"./dashak.JPG",
+      "link": "/ScribbleDay"
+    }
+]
