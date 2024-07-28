@@ -100,7 +100,19 @@
       "img":"./dashak.JPG",
       "link": "/events"
     },
-
+      {
+        "id": "8",    
+    "startDate": "2024-08-20",
+      "endDate": "2024-08-20",
+      "name": "Alumni Induction Dinner",
+      "startTime": "18:00:00",
+      "endTime": "21:00:00",
+      "venue": "Community Center",
+      "description": "A special dinner of the graduating batch for the graduating batch",
+      "eventTypeId": "Flagship Events",
+      "img":"./dashak.JPG",
+      "link": "/Alumni-Induction-Dinner"
+      },
     
 
     {
