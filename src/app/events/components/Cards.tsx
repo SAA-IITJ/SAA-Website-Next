@@ -10,6 +10,7 @@ interface Event {
   startDate: string;
   endDate: string;
   startTime: string;
+  img: string;
   link:string
 }
 
@@ -38,7 +39,7 @@ export function ThreeDCardDemo({ name, event }: ThreeDCardDemoProps) {
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
-            src=""
+            src={event.img}
             height={1000}
             width={1000}
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"

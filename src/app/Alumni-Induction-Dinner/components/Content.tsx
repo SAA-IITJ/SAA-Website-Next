@@ -37,12 +37,12 @@ const ContentSection: React.FC<ContentSectionProps> = ({
 export const AlternateSidesPage: React.FC = () => {
   const sections = [
     {
-      imgUrl: "https://via.placeholder.com/300",
+      imgUrl: "/assets/events/p6.jpg",
       heading: "The Graduated Batch",
       content: "The newly graduated alumni are truly special, marking the end of a significant chapter in their lives. Their journey through rigorous academics and personal growth has shaped them into individuals ready to make their mark on the world. As they step into the future, they carry with them the unique experiences and achievements that set them apart, embodying the spirit and excellence of their alma mater.",
     },
     {
-      imgUrl: "https://via.placeholder.com/300",
+      imgUrl: "/assets/events/aid.jpg",
       heading: "About Induction Dinner",
       content: "During the convocation, the graduated batch is honored with a special dinner hosted by the Director of IIT Jodhpur. This exclusive event provides a unique opportunity for the graduates to engage in meaningful conversations with the Director, reflect on their academic journey, and celebrate their achievements. It's a chance to strengthen their connection with the institution and mark the end of an important chapter in their lives.",
       reverse: true,

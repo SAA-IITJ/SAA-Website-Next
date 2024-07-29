@@ -9,8 +9,8 @@ const AlumniChannelSection = () => {
     <div className="px-10">
       <div className="grid max-w-screen-xl mt-12 px-4 py-12 mx-auto lg:gap-8 xl:gap-0 lg:py-12 lg:px-0.5 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-black">
-            Alumni Channel
+          <h1 className="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-5xl dark:text-black">
+            Announcement Channel
           </h1>
           <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl dark:text-black">
             A dedicated platform for our esteemed alumni to connect with all the
@@ -19,7 +19,7 @@ const AlumniChannelSection = () => {
           </p>
           <div className="event-link event-link-ltr">
             <Link
-              href="https://chat.whatsapp.com/D5J1QgK5REuLDDVw7rTrZx"
+              href="https://chat.whatsapp.com/FF5DBkQXXOEDeVmoBqNtJD "
               legacyBehavior
             >
               <a className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
@@ -50,7 +50,7 @@ const AlumniChannelSection = () => {
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
           <Image
-            src="/assets/home/distinguished_alumni.jpg"
+            src="/assets/home/channelArt.jpg"
             alt="Distinguished Alumni"
             className="h-full w-full"
             layout="responsive"

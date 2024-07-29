@@ -9,7 +9,7 @@
     "venue": "Conference Hall A",
     "description": "Alumni conduct session for students",
     "eventTypeId": "Ask an Alumnus",
-    "img":"./dashak.JPG",
+    "img":"/assets/events/dashakSection1.jpg",
       "link": "/events"},
     
     
@@ -23,7 +23,7 @@
     "venue": "Conference Hall A",
     "description": "Insights from the Alumni",
     "eventTypeId": "Alumni Interviews",
-    "img":"./dashak.JPG",
+    "img":"/assets/events/EOM.jpg",
     "link": "/events"
 },
 
@@ -37,8 +37,9 @@
     "venue": "Conference Hall A",
     "description": "Webinar from our Alumni",
     "eventTypeId": "Ask an Alumnus",
-    "img":"./dashak.JPG",
+    "img":"/assets/events/dashakSection2.jpg",
     "link": "/events"
+
     },
 
     {
@@ -52,7 +53,7 @@
       "venue": "Conference Hall A",
       "description": "Webinar from our Alumni",
       "eventTypeId": "Ask an Alumnus",
-      "img":"./dashak.JPG",
+      "img":"/assets/events/dashakSection1.jpg",
       "link": "/events"
     },
 
@@ -67,7 +68,7 @@
       "venue": "Jodhpur Club",
       "description": "The prestigious 10-yearly alumni meetup for IIT Jodhpur!",
       "eventTypeId": "Flagship Events",
-      "img":"./dashak.JPG",
+      "img":"/assets/events/dashakSection.jpg",
       "link": "/Dashak"
     },
 
@@ -82,7 +83,7 @@
       "venue": "Conference Hall A",
       "description": "Annual tech fest and SAA's collaborative event",
       "eventTypeId": "Flagship Events",
-      "img":"./dashak.JPG",
+      "img":"/assets/events/p13.jpg",
       "link": "/PrometeoSAA"
     },
 
@@ -97,7 +98,7 @@
       "venue": "Workshop Room B",
       "description": "An event for the graduating batch",
       "eventTypeId": "Ask an Alumnus",
-      "img":"./dashak.JPG",
+      "img":"/assets/events/dashakSection3.jpg",
       "link": "/events"
     },
       {
@@ -110,7 +111,7 @@
       "venue": "Community Center",
       "description": "A special dinner of the graduating batch for the graduating batch",
       "eventTypeId": "Flagship Events",
-      "img":"./dashak.JPG",
+      "img":"/assets/events/aid.jpg",
       "link": "/Alumni-Induction-Dinner"
       },
     
@@ -126,7 +127,7 @@
       "venue": "Community Center",
       "description": "A special event for the graduating batch!",
       "eventTypeId": "Flagship Events",
-      "img":"./dashak.JPG",
+      "img":"/assets/events/scday.jpg",
       "link": "/ScribbleDay"
     }
 ]

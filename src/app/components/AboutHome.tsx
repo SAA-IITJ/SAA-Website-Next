@@ -34,7 +34,7 @@ export default function About() {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <Image
-                      src="/assets/home/carousel_studentgrpPhoto.jpg"
+                      src="/assets/home/about_1.jpg"
                       alt="Student Group Photo"
                       width={800}
                       height={600}
@@ -43,7 +43,7 @@ export default function About() {
                   </div>
                   <div className="py-3 sm:py-4">
                     <Image
-                      src="/assets/home/carousel_teamwork.jpg"
+                      src="/assets/home/about_2.jpg"
                       alt="Teamwork"
                       width={800}
                       height={600}
@@ -54,7 +54,7 @@ export default function About() {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2 mt-4 sm:mt-0">
                   <div className="relative z-10 my-4">
                     <Image
-                      src="/assets/home/carousel_studentgrp.png"
+                      src="/assets/home/about_3.jpg"
                       alt="Student Group"
                       width={800}
                       height={600}

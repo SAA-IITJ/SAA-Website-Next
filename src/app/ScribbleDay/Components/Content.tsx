@@ -37,18 +37,18 @@ const ContentSection: React.FC<ContentSectionProps> = ({
 export const AlternateSidesPage: React.FC = () => {
   const sections = [
     {
-      imgUrl: "https://via.placeholder.com/300",
+      imgUrl: "/assets/events/scday.jpg",
       heading: "About Scribble Day",
       content: "On Scribble Day, a special tradition for the graduating batch of IIT Jodhpur, students celebrate their final days on campus with a unique and memorable activity. Each graduating student receives a T-shirt and is given the opportunity to leave their mark by writing messages, signatures, and drawings on their peers' shirts.",
     },
     {
-      imgUrl: "https://via.placeholder.com/300",
+      imgUrl: "/assets/events/scday1.jpg",
       heading: "The Significance",
       content: "Scribble Day is more than just a fun activity; it’s a way for students to reflect on their time at IIT Jodhpur and to create a tangible reminder of their experiences. It fosters a sense of unity and nostalgia, as students celebrate their accomplishments and the bonds they’ve built over the years. The event highlights the camaraderie and spirit of the graduating class, marking a memorable end to their academic journey.",
       reverse: true,
     },
     {
-      imgUrl: "https://via.placeholder.com/300",
+      imgUrl: "/assets/events/scday2.jpg",
       heading: "Forming Memories Lifelong",
       content: "This event becomes a canvas for personal expression and creativity. Students scribble heartfelt notes, inside jokes, and drawings that capture their shared experiences and friendships formed during their time at IIT Jodhpur. The T-shirts become cherished keepsakes, serving as lasting mementos of their college journey.",
     },

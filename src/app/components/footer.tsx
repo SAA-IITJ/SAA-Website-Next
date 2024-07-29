@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="/home" className="flex items-center">
               <img
                 className="h-12 me-3"
                 src="/assets/saa_logo_jpeg.jpeg"
@@ -24,32 +24,29 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="text-gray-500 dark:text-black font-medium">
                 <li className="mb-4">
-                  <a href="/home" className="hover:underline">SAA</a>
+                  <a href="/home" className="hover:underline">Home</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/facultyAdvisor" className="hover:underline">Faculty Advisor</a>
+                  <a href="/team/faculty" className="hover:underline">Faculty Advisor</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/team" className="hover:underline">Student Team</a>
+                  <a href="/team/student" className="hover:underline">Student Team</a>
                 </li>
                 <li className="mb-4">
                   <a href="/events" className="hover:underline">Events</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/flagshipEvents" className="hover:underline">Flagship Events</a>
+                  <a href="/events" className="hover:underline">Flagship Events</a>
                 </li>
               </ul>
             </div>
             <div style={{ paddingTop: '40px' }}>
               <ul className="text-gray-500 dark:text-black font-medium">
                 <li className="mb-4">
-                  <a href="/dashak" className="hover:underline">Dashak</a>
+                  <a href="/events" className="hover:underline">Dashak</a>
                 </li>
                 <li className="mb-4">
                   <a href="/visitIITJ" className="hover:underline">Visit IITJ</a>
-                </li>
-                <li className="mb-4">
-                  <a href="/givingBack" className="hover:underline">Giving Back</a>
                 </li>
                 <li className="mb-4">
                   <a href="https://www.iitj.ac.in/" className="hover:underline">IIT Jodhpur</a>
@@ -65,23 +62,20 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="text-gray-500 dark:text-black font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">Github</a>
+                  <a href="https://github.com/SAA-IITJ" className="hover:underline">Github</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">Discord</a>
+                  <a href="https://discord.gg/en4RNbAr" className="hover:underline">Discord</a>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-extrabold text-gray-900 uppercase dark:text-black">
-                Legal
+                CREDITS
               </h2>
               <ul className="text-gray-500 dark:text-black font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                  <a href="/credits" className="hover:underline">Image Sources</a>
                 </li>
               </ul>
             </div>

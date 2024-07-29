@@ -10,12 +10,12 @@ export const navLinks: NavLinks = {
   team: {
     text: "Team",
     subLinks: [
-      { text: "Faculty Advisor", url: "/facultyAdvisor" },
-      { text: "Student Team", url: "/studentTeam" },
+      { text: "Faculty Advisor", url: "/team/faculty" },
+      { text: "Student Team", url: "/team/student" },
     ],
   },
   activities: {
-    text: "Activities",
+    text: "Events",
     url: "/events",
   },
   visit_IITJ: {

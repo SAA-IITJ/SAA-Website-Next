@@ -56,13 +56,22 @@ export default function VisitIITJ() {
                         <p className="font-light text-gray-500 sm:text-xl dark:text-gray-900">
                             To visit IIT Jodhpur during Alumni Day or DASHAK 3.0, visit the Dashak section of events page
                         </p>
-                        <Link href="#">
+                        <Link href="/events">
                             <span className="inline-flex justify-between items-center py-1 px-1 pr-4 mt-4 mb-4 text-sm rounded-full bg-red-400 text-black font-bold hover:underline" role="alert" style={{ backgroundColor: '#fee2e2 !important' }}>
                                 <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3"></span>
                                 <span className="text-sm font-medium">Get Started</span>
-                                <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 001.414 0L12 12.414l3.293 3.293a1 1 0 001.414-1.414L13.414 12l3.293-3.293a1 1 0 00-1.414-1.414L12 10.586 8.707 7.293a1 1 0 00-1.414 1.414L10.586 12 7.293 15.293a1 1 0 000 1.414z" clipRule="evenodd" />
-                                </svg>
+                                <svg
+                      className="w-5 h-5 ml-2 -mr-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
                             </span>
                         </Link>
                     </div>
@@ -94,17 +103,18 @@ export default function VisitIITJ() {
                                         <li>
                                         </li>
                                         <li>
-                                            <a href="#" className="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=b22es007@iitj.ac.in" className="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
                                                 <svg className="w-6 h-6 text-gray-800 dark:text-black dark:hover:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                                     <path d="M17 6h-2V5h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2h-.541A5.965 5.965 0 0 1 14 10v4a1 1 0 1 1-2 0v-4c0-2.206-1.794-4-4-4-.075 0-.148.012-.22.028C7.686 6.022 7.596 6 7.5 6A4.505 4.505 0 0 0 3 10.5V16a1 1 0 0 0 1 1h7v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3h5a1 1 0 0 0 1-1v-6c0-2.206-1.794-4-4-4Zm-9 8.5H7a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2Z" />
                                                 </svg>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" className="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                                <svg className="w-6 h-6 text-gray-800 dark:text-black dark:hover:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path d="M16 5.5A1.5 1.5 0 0 1 14.5 4h-11A1.5 1.5 0 0 1 2 5.5v13A1.5 1.5 0 0 1 3.5 20h11A1.5 1.5 0 0 1 16 18.5v-13ZM6.5 5h11v2h-11V5Zm0 3h11v10h-11V8Zm5.5 7a1 1 0 1 0-1-1 1 1 0 0 0 1 1Zm0-3a1 1 0 1 0-1-1 1 1 0 0 0 1 1Z" />
-                                                </svg>
+                                            <a href="https://www.instagram.com/tharak_hegde/#" className="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                            <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+</svg>
+
                                             </a>
                                         </li>
                                     </ul>
@@ -126,17 +136,18 @@ export default function VisitIITJ() {
                                         <li>
                                         </li>
                                         <li>
-                                            <a href="#" className="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=b22me074@iitj.ac.in" className="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
                                                 <svg className="w-6 h-6 text-gray-800 dark:text-black dark:hover:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                                     <path d="M17 6h-2V5h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2h-.541A5.965 5.965 0 0 1 14 10v4a1 1 0 1 1-2 0v-4c0-2.206-1.794-4-4-4-.075 0-.148.012-.22.028C7.686 6.022 7.596 6 7.5 6A4.505 4.505 0 0 0 3 10.5V16a1 1 0 0 0 1 1h7v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3h5a1 1 0 0 0 1-1v-6c0-2.206-1.794-4-4-4Zm-9 8.5H7a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2Z" />
                                                 </svg>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" className="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                                <svg className="w-6 h-6 text-gray-800 dark:text-black dark:hover:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path d="M16 5.5A1.5 1.5 0 0 1 14.5 4h-11A1.5 1.5 0 0 1 2 5.5v13A1.5 1.5 0 0 1 3.5 20h11A1.5 1.5 0 0 1 16 18.5v-13ZM6.5 5h11v2h-11V5Zm0 3h11v10h-11V8Zm5.5 7a1 1 0 1 0-1-1 1 1 0 0 0 1 1Zm0-3a1 1 0 1 0-1-1 1 1 0 0 0 1 1Z" />
-                                                </svg>
+                                            <a href="https://www.instagram.com/yuvrajsrn/" className="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                            <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+</svg>
+
                                             </a>
                                         </li>
                                     </ul>

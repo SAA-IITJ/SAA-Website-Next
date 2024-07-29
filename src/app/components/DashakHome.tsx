@@ -40,11 +40,11 @@ const AlumniDaySection = () => {
                   Alumni Day and Dashak 3.0
                 </h1>
                 <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl dark:text-black">
-                  From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.
+                Dashak, the prestigious 10-yearly alumni meetup for IIT Jodhpur! Dashak is more than just a reunion; it's a celebration of the enduring bonds, shared memories, and remarkable journeys of the IIT Jodhpur community.
                 </p>
                 <div className="event-link event-link-ltr">
                   <a
-                    href="#"
+                    href="/events"
                     className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                   >
                     Get started
@@ -65,7 +65,7 @@ const AlumniDaySection = () => {
               </div>
               <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
                 <Image
-                  src="/assets/home/events_image.png"
+                  src="/assets/home/dashakArt.jpg"
                   alt="Events Image"
                   width={500}
                   height={500}

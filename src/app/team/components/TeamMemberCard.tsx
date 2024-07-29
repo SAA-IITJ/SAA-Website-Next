@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
 import ImageSkeletonLoader from "@/app/components/imageskeletonloader";
 import { TeamMember as TeamMemberType } from "@/app/types/Team.type";
 import { TEAM_PAGE_TEAM_TYPES } from "@/app/data/teamMembers";
 
 type TeamMemberProps = TeamMemberType;
 
-const TeamMember: React.FC<TeamMemberProps> = (prop) => {
+const TeamMember: React.FC<TeamMemberProps> = (props) => {
   return (
     <div
       className="delay-[300ms] duration-[500ms] taos:translate-y-[200px] taos:opacity-0"
@@ -13,22 +14,23 @@ const TeamMember: React.FC<TeamMemberProps> = (prop) => {
     >
       <div className="duration-[1000ms] [animation-iteration-count:infinite] taos:opacity-0">
         <div className="text-center text-gray-500 dark:text-gray-800">
-          <ImageSkeletonLoader
+          {/* <ImageSkeletonLoader
             classes="object-cover object-top mx-auto mb-4 w-48 h-48 rounded-full"
-            srcPath={prop.imagePath}
+            srcPath={props.imagePath}
             altPath=""
-          />
+          /> */}
+          <img src={props.imagePath} className="object-cover object-top mx-auto mb-4 w-48 h-48 rounded-full" alt="" />
           <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-            <p>{prop.name}</p>
+            <p>{props.name}</p>
           </h3>
-          {TEAM_PAGE_TEAM_TYPES[prop.teamType] !== "Super" && (
-            <p>{TEAM_PAGE_TEAM_TYPES[prop.teamType]}</p>
+          {TEAM_PAGE_TEAM_TYPES[props.teamType] !== "Super" && (
+            <p>{TEAM_PAGE_TEAM_TYPES[props.teamType]}</p>
           )}
           <ul className="flex justify-center mt-4 space-x-4">
-            {prop.instagramLink && (
+            {props.instagramLink && (
               <li>
                 <a
-                  href={prop.instagramLink}
+                  href={props.instagramLink}
                   className="text-[#416ecf] hover:text-gray-900 dark:hover:text-white"
                 >
                   <svg
@@ -44,7 +46,7 @@ const TeamMember: React.FC<TeamMemberProps> = (prop) => {
             )}
             <li>
               <a
-                href={`mailto:${prop.email}`}
+                href={`mailto:${props.email}`}
                 className="text-[#00acee] hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -57,10 +59,10 @@ const TeamMember: React.FC<TeamMemberProps> = (prop) => {
                 </svg>
               </a>
             </li>
-            {prop.linkedinLink && (
+            {props.linkedinLink && (
               <li>
                 <a
-                  href={prop.linkedinLink}
+                  href={props.linkedinLink}
                   className="text-[#ed4c8a] hover:text-gray-900 dark:hover:text-white"
                 >
                   <svg

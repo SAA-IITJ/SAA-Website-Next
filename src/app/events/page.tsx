@@ -53,7 +53,7 @@ function Events() {
           Alumni Interviews
         </button>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
         {filteredEvents.map((event: Event) => (
           <ThreeDCardDemo key={event.id} name={event.name} event={event} />
         ))}
