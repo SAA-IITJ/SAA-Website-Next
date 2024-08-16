@@ -14,6 +14,7 @@ interface Event {
   startTime: string;
   eventTypeId: string;
   link: string;
+  img:string;
 }
 
 function Events() {
