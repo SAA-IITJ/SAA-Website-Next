@@ -7,18 +7,14 @@ interface SlideTabsExampleProps {
 }
 
 export const SlideTabsExample: React.FC = () => {
-  const handleClick = (eventType: string) => {
-    console.log(`Event triggered: ${eventType}`);
-  };
-
   return (
     <div className="bg-neutral-100 py-20">
-      <SlideTabs handleClick={handleClick} />
+      <SlideTabs handleClick={()=>{}}/>
     </div>
   );
 };
 
-const SlideTabs: React.FC<SlideTabsExampleProps> = ({ handleClick }) => {
+const SlideTabs: React.FC<SlideTabsExampleProps> = ({handleClick}) => {
   const [position, setPosition] = useState<{ left: number; width: number; opacity: number }>({
     left: 0,
     width: 0,
@@ -36,9 +32,9 @@ const SlideTabs: React.FC<SlideTabsExampleProps> = ({ handleClick }) => {
       className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1"
     >
       
-      <Tab setPosition={setPosition} handleClick={()=>{handleClick("Alumni Interviews")}} >Alumni Interviews</Tab>
-      <Tab setPosition={setPosition} handleClick={()=>{handleClick("Ask an Alumnus")}} >Ask an Alumnus</Tab>
-      <Tab setPosition={setPosition} handleClick={()=>{handleClick("Flagship Events")}} >Flagship Events</Tab>
+      <Tab setPosition={setPosition}  >Alumni Interviews</Tab>
+      <Tab setPosition={setPosition}  >Ask an Alumnus</Tab>
+      <Tab setPosition={setPosition}  >Flagship Events</Tab>
       
 
       <Cursor position={position} />
