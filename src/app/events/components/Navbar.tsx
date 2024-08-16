@@ -7,9 +7,13 @@ interface SlideTabsExampleProps {
 }
 
 export const SlideTabsExample: React.FC = () => {
+  const handleClick = (eventType: string) => {
+    console.log(`Event triggered: ${eventType}`);
+  };
+
   return (
     <div className="bg-neutral-100 py-20">
-      <SlideTabs handleClick={()=>{}}/>
+      <SlideTabs handleClick={handleClick} />
     </div>
   );
 };
