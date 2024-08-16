@@ -9,7 +9,7 @@ interface SlideTabsExampleProps {
 export const SlideTabsExample: React.FC = () => {
   return (
     <div className="bg-neutral-100 py-20">
-      <SlideTabs />
+      <SlideTabs handleClick={()=>{}}/>
     </div>
   );
 };
