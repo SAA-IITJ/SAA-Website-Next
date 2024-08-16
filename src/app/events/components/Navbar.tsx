@@ -18,7 +18,7 @@ export const SlideTabsExample: React.FC = () => {
   );
 };
 
-const SlideTabs: React.FC<SlideTabsExampleProps> = ({handleClick}) => {
+const SlideTabs: React.FC<SlideTabsExampleProps> = ({ handleClick }) => {
   const [position, setPosition] = useState<{ left: number; width: number; opacity: number }>({
     left: 0,
     width: 0,
