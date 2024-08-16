@@ -16,7 +16,7 @@ const AlumniChannelSection = () => {
           </p>
           <div className="event-link event-link-ltr">
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfwtaxAersRJuBq6Pl2-sNbjC67uZgC5gl37uMUwOmLeMC44w/viewform?embedded=true" legacyBehavior>
-              <a className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              <button className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Get started
                 <svg
                   className="w-5 h-5 ml-2 -mr-1"
@@ -30,7 +30,7 @@ const AlumniChannelSection = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </button>
             </Link>
           </div>
         </div>

@@ -54,6 +54,16 @@ const TeamMemberData: TeamMember[] = [
     linkedinLink: "https://www.linkedin.com/in/tanmay-daga-14b80b280/",
   },
   {
+    imagePath: "/assets/profileImages/danie.jpg",
+    name: "Danie George John",
+    position: 4,
+    teamType: 3,
+    phoneNumber: "7777777777",
+    email: "https://mail.google.com/mail/?view=cm&fs=1&to=b23ci1012@iitj.ac.in",
+    instagramLink: "https://www.instagram.com/daniegeorgejohn/",
+    linkedinLink: "https://www.linkedin.com/in/danie-george-john-24a677281/",
+  },
+  {
     imagePath: "/assets/profileImages/prakhar_team.jpg",
     name: "Prakhar Goyal",
     position: 4,
@@ -203,16 +213,6 @@ const TeamMemberData: TeamMember[] = [
     email: "https://mail.google.com/mail/?view=cm&fs=1&to=b23cs1006@iitj.ac.in",
     instagramLink: "#",
     linkedinLink: "https://www.linkedin.com/in/aurindum-banerjee/",
-  },
-  {
-    imagePath: "/assets/profileImages/danie.jpg",
-    name: "Danie George John",
-    position: 5,
-    teamType: 2,
-    phoneNumber: "7777777777",
-    email: "https://mail.google.com/mail/?view=cm&fs=1&to=b23ci1012@iitj.ac.in",
-    instagramLink: "https://www.instagram.com/daniegeorgejohn/",
-    linkedinLink: "https://www.linkedin.com/in/danie-george-john-24a677281/",
   },
   {
     imagePath: "/assets/profileImages/ektedar_team.jpg",

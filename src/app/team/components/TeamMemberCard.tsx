@@ -19,7 +19,7 @@ const TeamMember: React.FC<TeamMemberProps> = (props) => {
             srcPath={props.imagePath}
             altPath=""
           /> */}
-          <img src={props.imagePath} className="object-cover object-top mx-auto mb-4 w-48 h-48 rounded-full" alt="" />
+          <img src={props.imagePath} className="object-cover object-top mx-auto mb-4 w-48 h-48 rounded-full" alt="image" />
           <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
             <p>{props.name}</p>
           </h3>
