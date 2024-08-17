@@ -38,15 +38,15 @@ function AboutSection() {
         <DashakHome />
 
       </div>
-      
+
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <VisitIITJHome />
+        <VisitIITJHome />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <AlumniChannelSection/>
+        <AlumniChannelSection />
       </div>
-      
-      
+
+
     </>
   );
 }

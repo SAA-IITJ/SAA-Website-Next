@@ -1,5 +1,6 @@
 "use client";
 
+import Head from 'next/head';
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
@@ -23,6 +24,32 @@ function AboutSection() {
   }, []);
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "image": "https://media.licdn.com/dms/image/v2/C4D0BAQEeAR8xrKduig/company-logo_200_200/company-logo_200_200/0/1658770937578?e=2147483647&v=beta&t=_a8wQxMAOETqjMDdczTjox1gdOfpWd0baN0k8T9Q0j4",
+              "url": "https://www.saa.iitj.ac.in",
+              "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQEeAR8xrKduig/company-logo_200_200/company-logo_200_200/0/1658770937578?e=2147483647&v=beta&t=_a8wQxMAOETqjMDdczTjox1gdOfpWd0baN0k8T9Q0j4",
+              "name": "SAA IITJ",
+              "description": "Society of Alumni Affairs IIT Jodhpur",
+              "email": "saa@iitj.ac.in",
+              "telephone": "",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Indian Institute of Technology Jodhpur",
+                "addressLocality": "Karwar",
+                "addressCountry": "IN",
+                "addressRegion": "Rajasthan",
+                "postalCode": "342037"
+              },
+            }),
+          }}
+        />
+      </Head>
       <LogoSpace />
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <About />
@@ -37,13 +64,13 @@ function AboutSection() {
         <DashakHome />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <VisitIITJHome />
+        <VisitIITJHome />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <AlumniChannelSection/>
+        <AlumniChannelSection />
       </div>
-      
-      
+
+
     </>
   );
 }
