@@ -21,7 +21,7 @@ const Page: React.FC = () => {
                   Our Team
                 </h2>
                 <p className="mb-20 font-light text-gray-500 sm:text-xl dark:text-gray-800">
-                  Building Bridges and Strengthening Bonds: Enhancing Alumni Collaboration Through Teamwork and Engagement
+                Fostering Connections and Fortifying Ties: Elevating Alumni Cooperation through Collaboration and Active Engagement.
                 </p>
               </div>
             </div>

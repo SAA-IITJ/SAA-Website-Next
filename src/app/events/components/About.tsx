@@ -8,35 +8,35 @@ export const AboutLinks: React.FC = () => {
   return (
     <section className="bg-#000435 p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
-        <Link to='#'>
+        <a href='#'>
           <AboutLink
             heading="Blockchain"
             subheading="Learn what we do here"
             imgSrc="https://cdn.corporatefinanceinstitute.com/assets/AdobeStock_280230556-scaled.jpeg"
             href="Hero2.jsx#blockchain"
           />
-        </Link>
-        <Link to='#'>
+        </a>
+        <a href='#'>
           <AboutLink 
             heading="AI"
             subheading="We work with great people"
             imgSrc="https://cioafrica.co/wp-content/uploads/2024/01/AI.jpg"
           />
-        </Link>
-        <Link to='#'>
+        </a>
+        <a href='#'>
           <AboutLink
             heading="E-commerce"
             subheading="Our work speaks for itself"
             imgSrc="https://st.depositphotos.com/1001877/3814/i/450/depositphotos_38143799-stock-photo-e-commerce-shopping-cart-with.jpg"
           />
-        </Link>
-        <Link to='#'>
+        </a>
+        < a href='#'>
           <AboutLink
             heading="Mobile-Applications"
             subheading="We want cool people"
             imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX5_dV9AbAvL6r7V5EPS-Eq5FCbjG5BBU55w&s"
           />
-        </Link>
+        </a>
         <AboutLink
           heading="Fun"
           subheading="Incase you're bored"

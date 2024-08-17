@@ -34,7 +34,7 @@ const Page: React.FC = () => {
                 <div className="delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
                   <div className="duration-[1000ms] [animation-iteration-count:infinite] taos:opacity-0">
                     <p className="mt-20 font-light text-gray-500 sm:text-xl dark:text-gray-800">
-                      <i>"Building Bridges and Strengthening Bonds: Enhancing Alumni Collaboration Through Teamwork and Engagement"</i>
+                      <i>Building Bridges and Strengthening Bonds: Enhancing Alumni Collaboration Through Teamwork and Engagement</i>
                     </p>
                   </div>
                 </div>

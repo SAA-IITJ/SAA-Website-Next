@@ -49,7 +49,7 @@ const NavBar: React.FC<NavBarProps> = ({ navLinks }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <a href="/home" className="text-black">
+              <a href="/home.html" className="text-black">
                 <div className="flex items-center">
                   <img
                     className="w-16"

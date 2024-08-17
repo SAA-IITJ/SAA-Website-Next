@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function VisitIITJ() {
     return (
@@ -8,9 +7,9 @@ export default function VisitIITJ() {
             <Head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <link
+                <a rel="preconnect" href="https://fonts.googleapis.com" />
+                <a rel="preconnect" href="https://fonts.gstatic.com"/>
+                <a
                     href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
                     rel="stylesheet"
                 />
@@ -23,7 +22,7 @@ export default function VisitIITJ() {
             }
           `}
                 </style>
-                <link rel="stylesheet" href="/stylesheets/visitIITJ.css" />
+                <a rel="stylesheet" href="/stylesheets/visitIITJ.css" />
             </Head>
 
             {/* Page Content */}
@@ -33,7 +32,7 @@ export default function VisitIITJ() {
                         <h2 className="mb-4 text-5xl tracking-tight font-semibold text-black">Visit IIT Jodhpur</h2>
                         <p className="mb-6 font-light md:text-xl text-gray-950">
                             We invite you to tour IIT Jodhpur’s impressive and picturesque campus, where you can see the foundation of our impactful endeavors.
-                        </p>
+                        </p> 
                     </div>
                     <div className="box" style={{ animation: 'circle 1.5s', clipPath: 'circle(75%)' }}>
                         <Image
@@ -56,7 +55,7 @@ export default function VisitIITJ() {
                         <p className="font-light text-gray-500 sm:text-xl dark:text-gray-900">
                             To visit IIT Jodhpur during Alumni Day or DASHAK 3.0, visit the Dashak section of events page
                         </p>
-                        <Link href="/events">
+                        <a href="/events.html">
                             <span className="inline-flex justify-between items-center py-1 px-1 pr-4 mt-4 mb-4 text-sm rounded-full bg-red-400 text-black font-bold hover:underline" role="alert" style={{ backgroundColor: '#fee2e2 !important' }}>
                                 <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3"></span>
                                 <span className="text-sm font-medium">Get Started</span>
@@ -73,7 +72,7 @@ export default function VisitIITJ() {
                       ></path>
                     </svg>
                             </span>
-                        </Link>
+                        </a>
                     </div>
 
                     {/* Normal Visit Section with Animation */}

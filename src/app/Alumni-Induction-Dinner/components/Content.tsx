@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ContentSectionProps {
   imgUrl: string;
@@ -20,7 +21,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
       }`}
     >
       <div className="md:w-1/2 flex justify-center">
-        <img
+        <Image
           src={imgUrl}
           alt={heading}
           className="rounded-lg shadow-lg max-w-xs w-full h-auto"

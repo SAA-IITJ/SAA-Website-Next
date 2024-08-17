@@ -40,11 +40,11 @@ const AlumniDaySection = () => {
                   Alumni Day and Dashak 3.0
                 </h1>
                 <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl dark:text-black">
-                Dashak, the prestigious 10-yearly alumni meetup for IIT Jodhpur! Dashak is more than just a reunion; it's a celebration of the enduring bonds, shared memories, and remarkable journeys of the IIT Jodhpur community.
+                Dashak, the prestigious 10-yearly alumni meetup for IIT Jodhpur! Dashak is more than just a reunion; it&apos;s a celebration of the enduring bonds, shared memories, and remarkable journeys of the IIT Jodhpur community.
                 </p>
                 <div className="event-link event-link-ltr">
                   <a
-                    href="/events"
+                    href="/events.html"
                     className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                   >
                     Get started

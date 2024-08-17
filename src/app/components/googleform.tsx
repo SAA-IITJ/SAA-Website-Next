@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import "../styles/AlumniChanel.css";
 import "../styles/AlumniChanel-ltr.css";
 
@@ -15,7 +14,7 @@ const AlumniChannelSection = () => {
             Leave any comment or contact us for any issue
           </p>
           <div className="event-link event-link-ltr">
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfwtaxAersRJuBq6Pl2-sNbjC67uZgC5gl37uMUwOmLeMC44w/viewform?embedded=true" legacyBehavior>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwtaxAersRJuBq6Pl2-sNbjC67uZgC5gl37uMUwOmLeMC44w/viewform?embedded=true">
               <button className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Get started
                 <svg
@@ -31,7 +30,7 @@ const AlumniChannelSection = () => {
                   ></path>
                 </svg>
               </button>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">

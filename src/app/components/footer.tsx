@@ -24,29 +24,29 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="text-gray-500 dark:text-black font-medium">
                 <li className="mb-4">
-                  <a href="/home" className="hover:underline">Home</a>
+                  <a href="/home.html" className="hover:underline">Home</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/team/faculty" className="hover:underline">Faculty Advisor</a>
+                  <a href="/team/faculty.html" className="hover:underline">Faculty Advisor</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/team/student" className="hover:underline">Student Team</a>
+                  <a href="/team/student.html" className="hover:underline">Student Team</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/events" className="hover:underline">Events</a>
+                  <a href="/events.html" className="hover:underline">Events</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/events" className="hover:underline">Flagship Events</a>
+                  <a href="/events.html" className="hover:underline">Flagship Events</a>
                 </li>
               </ul>
             </div>
             <div style={{ paddingTop: '40px' }}>
               <ul className="text-gray-500 dark:text-black font-medium">
                 <li className="mb-4">
-                  <a href="/events" className="hover:underline">Dashak</a>
+                  <a href="/events.html" className="hover:underline">Dashak</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/visitIITJ" className="hover:underline">Visit IITJ</a>
+                  <a href="/visitIITJ.html" className="hover:underline">Visit IITJ</a>
                 </li>
                 <li className="mb-4">
                   <a href="https://www.iitj.ac.in/" className="hover:underline">IIT Jodhpur</a>
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="text-gray-500 dark:text-black font-medium">
                 <li className="mb-4">
-                  <a href="/credits" className="hover:underline">Image Sources</a>
+                  <a href="/credits.html" className="hover:underline">Image Sources</a>
                 </li>
               </ul>
             </div>

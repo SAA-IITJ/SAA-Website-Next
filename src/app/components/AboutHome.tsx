@@ -19,7 +19,7 @@ export default function About() {
               </h3>
             </div>
             <p className="text-lg lg:text-xl mb-4">
-              The SAA community enhances the institute and students' growth through organizing events like Senate Introduction, Prometeo X SAA, Convocation & Alumni Induction Dinner, Dashak 3.0 + Alumni Day, graduating batch see-off ceremony, Soon to be Alumnus, and Ask an Alumnus, the society fosters strong connections and facilitates continuous improvement and development.
+            The SAA community enhances the institute and student growth through organizing events like Senate Introduction, Prometeo X SAA, Convocation & Alumni Induction Dinner, Dashak 3.0 + Alumni Day, graduating batch see-off ceremony, Soon to be Alumnus, and Ask an Alumnus. The society fosters strong connections and facilitates continuous improvement and development.
             </p>
           </div>
         </div>
@@ -33,12 +33,11 @@ export default function About() {
               <div className="flex items-center -mx-3 sm:-mx-4 ">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    <Image
+                    <img
                       src="/assets/home/about_1.jpg"
                       alt="Student Group Photo"
-                      width={800}
-                      height={600}
-                      className="h-auto max-w-full rounded-2xl"
+                      
+                      className="h-auto max-w-full rounded-2xl h-800 h-600"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
@@ -637,13 +636,13 @@ export default function About() {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12 mt-6 lg:mt-4">
               <div className="mt-4 lg:mt-0">
                 <h2 className="mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px]">
-                  SAA's Diverse Verticals: Driving Success and Alumni Connections
+                  SAA&apos;s Diverse Verticals: Driving Success and Alumni Connections
                 </h2>
                 <p className="mb-5 text-lg text-body-color dark:text-dark-6">
                   The society has various verticals, including Content, Design, Tech, Media, AMP (Alumni Mentorship Programme), and Events. Each vertical plays a vital role in the overall functioning and success of the society, with a commitment to maintaining high standards and continuously improving efforts.
                 </p>
                 <p className="mb-8 text-lg text-body-color dark:text-dark-6">
-                  SAA's various verticals ensure the smooth operation and success of its events, fostering connections and camaraderie among its alumni.
+                  SAA&apos;s various verticals ensure the smooth operation and success of its events, fostering connections and camaraderie among its alumni.
                 </p>
               </div>
             </div>
