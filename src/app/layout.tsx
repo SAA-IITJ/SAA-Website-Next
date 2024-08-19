@@ -9,7 +9,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SAA Website",
+  title: "Society of Alumni Affairs (SAA)",
   description: "Official website for the Society of Alumni Affairs, IIT Jodhpur",
   authors: [
     { name: "SAA Core Team" },
@@ -46,7 +46,7 @@ export default function RootLayout({
               "image": "https://media.licdn.com/dms/image/v2/C4D0BAQEeAR8xrKduig/company-logo_200_200/company-logo_200_200/0/1658770937578?e=2147483647&v=beta&t=_a8wQxMAOETqjMDdczTjox1gdOfpWd0baN0k8T9Q0j4",
               "url": "https://www.saa.iitj.ac.in",
               "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQEeAR8xrKduig/company-logo_200_200/company-logo_200_200/0/1658770937578?e=2147483647&v=beta&t=_a8wQxMAOETqjMDdczTjox1gdOfpWd0baN0k8T9Q0j4",
-              "name": "SAA IITJ",
+              "name": "Society of Alumni Affairs (SAA) IITJ",
               "description": "Society of Alumni Affairs IIT Jodhpur",
               "email": "saa@iitj.ac.in",
               "telephone": "",
