@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect,useRef } from "react";
 import {
   NavLinks,
   DropdownLink,
@@ -7,6 +7,8 @@ import {
   NavLink,
 } from "@/app/types/Navlinks.type";
 import styles from "../styles/nav.module.css"; // Ensure your custom styles are imported
+import { useWindowWidth } from "../hooks/useWindowWidth";
+
 
 export interface NavBarProps {
   navLinks: NavLinks;
@@ -16,12 +18,15 @@ const NavBar: React.FC<NavBarProps> = ({ navLinks }) => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
+  const typeWriterRef = useRef<HTMLSpanElement>(null);
+  const windowWidth = useWindowWidth();
 
   const isDropdownLink = (navLink: NavLink): navLink is DropdownLink => {
     return (navLink as DropdownLink).subLinks !== undefined;
   };
 
   useEffect(() => {
+    console.log(windowWidth);
     return () => {
       if (hoverTimeout) {
         clearTimeout(hoverTimeout);
@@ -56,8 +61,8 @@ const NavBar: React.FC<NavBarProps> = ({ navLinks }) => {
                     src="/assets/saa_logo_jpeg.jpeg"
                     alt="Logo"
                   />
-                  <span className={`ml-3 text-3xl font-semibold whitespace-nowrap dark:text-white ${styles.title}`}>
-                    Society of Alumni Affairs
+                  <span ref={typeWriterRef} className={`ml-3 text-3xl font-semibold whitespace-nowrap dark:text-white ${styles.title}`}>
+                    {windowWidth>=1024?"Society of Alumni Affairs":"SAA"}
                   </span>
                 </div>
               </a>
