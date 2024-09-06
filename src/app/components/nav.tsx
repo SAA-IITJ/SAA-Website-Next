@@ -26,7 +26,7 @@ const NavBar: React.FC<NavBarProps> = ({ navLinks }) => {
   };
 
   useEffect(() => {
-    console.log(windowWidth);
+    // console.log(windowWidth);
     return () => {
       if (hoverTimeout) {
         clearTimeout(hoverTimeout);
