@@ -1,6 +1,10 @@
+"use client"
 import React from 'react';
+import { useWindowWidth } from '../hooks/useWindowWidth';
+
 
 const Footer: React.FC = () => {
+  const windowWidth = useWindowWidth();
   return (
     <footer className="bg-white dark:bg-white"  style={{ marginTop: 'auto' }}>
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -13,7 +17,7 @@ const Footer: React.FC = () => {
                 alt="Society of Alumni Affairs Logo"
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">
-                Society of Alumni Affairs
+                {windowWidth<=1024?"SAA":"Society of Alumni Affairs"}
               </span>
             </a>
           </div>
